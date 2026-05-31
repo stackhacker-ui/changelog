@@ -1,0 +1,188 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.723 0.219 149.579);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.723 0.219 149.579);
+  --primary-foreground: oklch(0.145 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@utility container {
+  @apply mx-auto w-full max-w-6xl px-4 md:px-6;
+}
+
+@utility border-grid {
+  @apply border-border/60;
+}
+
+.changelog-markdown {
+  @apply text-sm leading-7 text-muted-foreground wrap-break-word sm:text-base;
+}
+
+.changelog-markdown > :first-child,
+.changelog-markdown :where(.mdc-content > :first-child) {
+  @apply mt-0;
+}
+
+.changelog-markdown > :last-child,
+.changelog-markdown :where(.mdc-content > :last-child) {
+  @apply mb-0;
+}
+
+.changelog-markdown :where(h1, h2, h3, h4) {
+  @apply mt-8 mb-3 scroll-m-20 font-semibold tracking-tight text-foreground;
+}
+
+.changelog-markdown :where(h1) {
+  @apply text-2xl sm:text-3xl;
+}
+
+.changelog-markdown :where(h2) {
+  @apply text-xl sm:text-2xl;
+}
+
+.changelog-markdown :where(h3) {
+  @apply text-lg sm:text-xl;
+}
+
+.changelog-markdown :where(h4) {
+  @apply text-base;
+}
+
+.changelog-markdown :where(p) {
+  @apply my-4 leading-7;
+}
+
+.changelog-markdown :where(a) {
+  @apply font-medium text-primary underline-offset-4 wrap-break-word hover:underline;
+}
+
+.changelog-markdown :where(h1 a, h2 a, h3 a, h4 a) {
+  @apply text-foreground no-underline;
+}
+
+.changelog-markdown :where(strong) {
+  @apply font-semibold text-foreground;
+}
+
+.changelog-markdown :where(ul) {
+  @apply my-4 list-disc space-y-2 ps-5 sm:ps-6;
+}
+
+.changelog-markdown :where(ol) {
+  @apply my-4 list-decimal space-y-2 ps-5 sm:ps-6;
+}
+
+.changelog-markdown :where(li) {
+  @apply ps-1 leading-7 wrap-break-word;
+}
+
+.changelog-markdown :where(li > ul, li > ol) {
+  @apply my-2;
+}
+
+.changelog-markdown :where(code) {
+  @apply rounded-md border bg-muted px-1.5 py-0.5 font-mono text-[0.85em] text-foreground;
+}
+
+.changelog-markdown :where(pre) {
+  @apply my-5 overflow-x-auto rounded-lg border bg-muted/40 p-4 text-sm shadow-inner;
+}
+
+.changelog-markdown :where(pre code) {
+  @apply border-0 bg-transparent p-0 text-sm;
+}
+
+.changelog-markdown :where(blockquote) {
+  @apply my-4 border-l-2 border-primary/40 bg-muted/30 py-1 ps-4 text-muted-foreground;
+}
+
+.changelog-markdown :where(hr) {
+  @apply my-6 border-border;
+}
+
+.changelog-markdown :where(table) {
+  @apply my-5 w-full border-collapse overflow-hidden rounded-lg text-sm;
+}
+
+.changelog-markdown :where(th, td) {
+  @apply border px-3 py-2 text-left align-top;
+}
+
+.changelog-markdown :where(th) {
+  @apply bg-muted font-semibold text-foreground;
+}

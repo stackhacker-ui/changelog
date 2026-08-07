@@ -18,7 +18,7 @@
 
 ## Tooling And UI Conventions
 
-- Package manager is `pnpm@10.15.1`; CI runs on Node 22.
+- Package manager is `pnpm@10.33.4`; CI uses the repository's `.node-version`.
 - shadcn-vue components live in `app/components/ui` per `components.json` and `nuxt.config.ts`.
 - `components.json` includes the `@stackhacker-ui` registry at `https://ui.stackhacker.io/r/{name}.json`.
 - Styling uses Tailwind CSS v4 through `@tailwindcss/vite`; prefer semantic tokens/classes already used in the app.

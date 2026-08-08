@@ -12,14 +12,14 @@ importers:
         specifier: ^1.2.3
         version: 1.2.3
       '@nuxt/icon':
-        specifier: ^2.2.1
-        version: 2.2.1(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        specifier: ^2.4.1
+        version: 2.4.1(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
       '@nuxtjs/color-mode':
         specifier: ^3.5.2
         version: 3.5.2(magicast@0.5.2)
       '@nuxtjs/mdc':
         specifier: 0.22.2
-        version: 0.22.2(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))
+        version: 0.22.2(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)
       '@tailwindcss/vite':
         specifier: ^4.2.1
         version: 4.2.4(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))
@@ -62,7 +62,7 @@ importers:
     devDependencies:
       '@nuxt/eslint':
         specifier: ^1.15.2
-        version: 1.15.2(@typescript-eslint/utils@8.59.1(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(@vue/compiler-sfc@3.5.41)(eslint@9.39.4(jiti@2.7.0))(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(typescript@5.9.3)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))
+        version: 1.15.2(@typescript-eslint/utils@8.59.1(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(@vue/compiler-sfc@3.5.41)(eslint@9.39.4(jiti@2.7.0))(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(typescript@5.9.3)(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))
       '@vue/language-core':
         specifier: ^3.1.1
         version: 3.2.7
@@ -512,19 +512,19 @@ packages:
   '@iconify-json/mdi@1.2.3':
     resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
 
-  '@iconify/collections@1.0.677':
-    resolution: {integrity: sha512-Uwbl1p26Md6m2xTMjalJsmQ43YxW+j6RsyrL5RnxRCHEhwympJlaBBCGTKrqI3sA93g9UVJ/Pxi7zDqM3E1oPw==}
+  '@iconify/collections@1.0.720':
+    resolution: {integrity: sha512-19NFSBxT9QJhm1Lc+qwt1vSpbTS5wvxeaeKXhreiZLtKwpJkXHm47MDzFRu6qvYuRgfH6QP7Ao36IeRRadjgfQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
-  '@iconify/utils@3.1.1':
-    resolution: {integrity: sha512-MwzoDtw9rO1x+qfgLTV/IVXsHDBqeYZoMIQC8SfxfYSlaSUG+oWiAcoiB1yajAda6mqblm4/1/w2E8tRu7a7Tw==}
+  '@iconify/utils@3.1.4':
+    resolution: {integrity: sha512-b1S7B1k9ohZ+iNTi2ATxbRYG9fTrJmUT0rc46bvVnNxqNRGW7dyo/vRREwyniI5IRN2RSJHDcm+s3BjWrSAjHw==}
 
-  '@iconify/vue@5.0.0':
-    resolution: {integrity: sha512-C+KuEWIF5nSBrobFJhT//JS87OZ++QDORB6f2q2Wm6fl2mueSTpFBeBsveK0KW9hWiZ4mNiPjsh6Zs4jjdROSg==}
+  '@iconify/vue@5.0.1':
+    resolution: {integrity: sha512-aumwwooJlFJ5H5qYWB6ZTAyM0C8hpfcSVLB9/a3qnH1GGvIJ+FEbpEs4s/HfErYe/M5qZeLjwmESR5fFm3lXEw==}
     peerDependencies:
-      vue: '>=3'
+      vue: '>=3.0.0'
 
   '@internationalized/date@3.12.1':
     resolution: {integrity: sha512-6IedsVWXyq4P9Tj+TxuU8WGWM70hYLl12nbYU8jkikVpa6WXapFazPUcHUMDMoWftIDE2ILDkFFte6W2nFCkRQ==}
@@ -672,6 +672,11 @@ packages:
     peerDependencies:
       vite: '>=6.0'
 
+  '@nuxt/devtools-kit@3.4.1':
+    resolution: {integrity: sha512-6ltPm2yUW8GvDdf3VJna7+flLi+ej7xRfSr+S4ovevKt/CuPf9EqYOn1jW7Kw/U1MXt/71zkn+/O2vu3G6O9Hg==}
+    peerDependencies:
+      vite: '>=6.0'
+
   '@nuxt/devtools-wizard@3.2.4':
     resolution: {integrity: sha512-5tu2+Quu9XTxwtpzM8CUN0UKn/bzZIfJcoGd+at5Yy1RiUQJ4E52tRK0idW1rMSUDkbkvX3dSnu8Tpj7SAtWdQ==}
     hasBin: true
@@ -712,8 +717,8 @@ packages:
       vite-plugin-eslint2:
         optional: true
 
-  '@nuxt/icon@2.2.1':
-    resolution: {integrity: sha512-GI840yYGuvHI0BGDQ63d6rAxGzG96jQcWrnaWIQKlyQo/7sx9PjXkSHckXUXyX1MCr9zY6U25Td6OatfY6Hklw==}
+  '@nuxt/icon@2.4.1':
+    resolution: {integrity: sha512-fOY3kiT6OoL4bWXVmMLc1VgoCm1PxIGSBmsSaLO090NEgtd1ub441dZ7MEoOD5UIilWzba1kCWdwJcAkGCOwLg==}
 
   '@nuxt/kit@3.21.2':
     resolution: {integrity: sha512-Bd6m6mrDrqpBEbX+g0rc66/ALd1sxlgdx5nfK9MAYO0yKLTOSK7McSYz1KcOYn3LQFCXOWfvXwaqih/b+REI1g==}
@@ -3170,6 +3175,9 @@ packages:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
 
+  import-meta-resolve@4.2.0:
+    resolution: {integrity: sha512-Iqv2fzaTQN28s/FwZAoFq0ZSs/7hMAHJVX+w8PZl3cY19Pxk6jFFalxQoIfW2826i/fDLXv8IiEZRIT0lDuWcg==}
+
   impound@1.1.5:
     resolution: {integrity: sha512-5AUn+QE0UofqNHu5f2Skf6Svukdg4ehOIq8O0EtqIx4jta0CDZYBPqpIHt0zrlUTiFVYlLpeH39DoikXBjPKpA==}
 
@@ -3450,8 +3458,8 @@ packages:
     resolution: {integrity: sha512-IXO6OCs9yg8tMKzfPZ1YmheJbZCiEsnBdcB03l0OcfK9prKnJb96siuHCr5Fl37/yo9DnKU+TLpxzTUspw9shg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  local-pkg@1.1.2:
-    resolution: {integrity: sha512-arhlxbFRmoQHl33a0Zkle/YWlmNwoyt6QNZEIJcqNbdrsix5Lvc4HyyI3EnwxTYlZYc32EbYrQ8SzEZ7dqgg9A==}
+  local-pkg@1.2.1:
+    resolution: {integrity: sha512-++gUqRDEvcnN6Zhqrr+y/CkVEHhlrR96vZn3nZZPYzMcBUyBtTKzB9NadClFIsIVSsu+3i9tfk/erqy9kAmt7Q==}
     engines: {node: '>=14'}
 
   locate-path@6.0.0:
@@ -3981,8 +3989,8 @@ packages:
     resolution: {integrity: sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==}
     engines: {node: '>=8.6'}
 
-  picomatch@4.0.4:
-    resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
+  picomatch@4.0.5:
+    resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
     engines: {node: '>=12'}
 
   pkg-types@1.3.1:
@@ -4523,11 +4531,8 @@ packages:
     resolution: {integrity: sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==}
     engines: {node: '>= 0.8'}
 
-  std-env@3.10.0:
-    resolution: {integrity: sha512-5GS12FdOZNliM5mAOxFRg7Ir0pWz8MdpYm6AY6VPkGpbA7ZzmbzNcBJQ0GPvvyWgcY7QAhCgf9Uy89I03faLkg==}
-
-  std-env@4.1.0:
-    resolution: {integrity: sha512-Rq7ybcX2RuC55r9oaPVEW7/xu3tj8u4GeBYHBWCychFtzMIr86A7e3PPEBPT37sHStKX3+TiX/Fr/ACmJLVlLQ==}
+  std-env@4.2.0:
+    resolution: {integrity: sha512-oCUKSupKTHX53EyjDtuZQ64pjLJ6yYCtpmEw0goYxtjG9KpbRe8KAsl2tBUGU9DyMcJ0RwJ8GqJAFzMXcXW1Rw==}
 
   streamx@2.25.0:
     resolution: {integrity: sha512-0nQuG6jf1w+wddNEEXCF4nTg3LtufWINB5eFEN+5TNZW7KWJp6x87+JFL43vaAUPyCfH1wID+mNVyW6OHtFamg==}
@@ -5638,19 +5643,19 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify/collections@1.0.677':
+  '@iconify/collections@1.0.720':
     dependencies:
       '@iconify/types': 2.0.0
 
   '@iconify/types@2.0.0': {}
 
-  '@iconify/utils@3.1.1':
+  '@iconify/utils@3.1.4':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@iconify/types': 2.0.0
-      mlly: 1.8.2
+      import-meta-resolve: 4.2.0
 
-  '@iconify/vue@5.0.0(vue@3.5.41(typescript@5.9.3))':
+  '@iconify/vue@5.0.1(vue@3.5.41(typescript@5.9.3))':
     dependencies:
       '@iconify/types': 2.0.0
       vue: 3.5.41(typescript@5.9.3)
@@ -5839,7 +5844,7 @@ snapshots:
       scule: 1.3.0
       semver: 7.8.1
       srvx: 0.11.15
-      std-env: 4.1.0
+      std-env: 4.2.0
       tinyclip: 0.1.12
       tinyexec: 1.1.1
       ufo: 1.6.4
@@ -5855,6 +5860,18 @@ snapshots:
   '@nuxt/devalue@2.0.2': {}
 
   '@nuxt/devtools-kit@3.2.4(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))':
+    dependencies:
+      '@nuxt/kit': 4.5.2(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)
+      execa: 8.0.1
+      vite: 7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0)
+    transitivePeerDependencies:
+      - magic-string
+      - magicast
+      - oxc-parser
+      - rolldown
+      - unplugin
+
+  '@nuxt/devtools-kit@3.4.1(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))':
     dependencies:
       '@nuxt/kit': 4.5.2(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)
       execa: 8.0.1
@@ -5895,7 +5912,7 @@ snapshots:
       image-meta: 0.2.2
       is-installed-globally: 1.0.0
       launch-editor: 2.13.2
-      local-pkg: 1.1.2
+      local-pkg: 1.2.1
       magicast: 0.5.2
       nypm: 0.6.6
       ohash: 2.0.11
@@ -5943,7 +5960,7 @@ snapshots:
       eslint-plugin-vue: 10.9.0(@stylistic/eslint-plugin@5.10.0(eslint@9.39.4(jiti@2.7.0)))(@typescript-eslint/parser@8.59.1(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(vue-eslint-parser@10.4.0(eslint@9.39.4(jiti@2.7.0)))
       eslint-processor-vue-blocks: 2.0.0(@vue/compiler-sfc@3.5.41)(eslint@9.39.4(jiti@2.7.0))
       globals: 17.5.0
-      local-pkg: 1.1.2
+      local-pkg: 1.2.1
       pathe: 2.0.3
       vue-eslint-parser: 10.4.0(eslint@9.39.4(jiti@2.7.0))
     transitivePeerDependencies:
@@ -5962,10 +5979,10 @@ snapshots:
       - supports-color
       - typescript
 
-  '@nuxt/eslint@1.15.2(@typescript-eslint/utils@8.59.1(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(@vue/compiler-sfc@3.5.41)(eslint@9.39.4(jiti@2.7.0))(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(typescript@5.9.3)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))':
+  '@nuxt/eslint@1.15.2(@typescript-eslint/utils@8.59.1(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(@vue/compiler-sfc@3.5.41)(eslint@9.39.4(jiti@2.7.0))(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(typescript@5.9.3)(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))':
     dependencies:
       '@eslint/config-inspector': 1.5.0(eslint@9.39.4(jiti@2.7.0))
-      '@nuxt/devtools-kit': 3.2.4(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))
+      '@nuxt/devtools-kit': 3.4.1(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))
       '@nuxt/eslint-config': 1.15.2(@typescript-eslint/utils@8.59.1(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(@vue/compiler-sfc@3.5.41)(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
       '@nuxt/eslint-plugin': 1.15.2(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
       '@nuxt/kit': 4.5.2(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)
@@ -5994,22 +6011,22 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@nuxt/icon@2.2.1(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))':
+  '@nuxt/icon@2.4.1(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))':
     dependencies:
-      '@iconify/collections': 1.0.677
+      '@iconify/collections': 1.0.720
       '@iconify/types': 2.0.0
-      '@iconify/utils': 3.1.1
-      '@iconify/vue': 5.0.0(vue@3.5.41(typescript@5.9.3))
-      '@nuxt/devtools-kit': 3.2.4(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))
+      '@iconify/utils': 3.1.4
+      '@iconify/vue': 5.0.1(vue@3.5.41(typescript@5.9.3))
+      '@nuxt/devtools-kit': 3.4.1(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))
       '@nuxt/kit': 4.5.2(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)
       consola: 3.4.2
-      local-pkg: 1.1.2
+      local-pkg: 1.2.1
       mlly: 1.8.2
       ohash: 2.0.11
-      pathe: 2.0.3
-      picomatch: 4.0.4
-      std-env: 3.10.0
+      picomatch: 4.0.5
+      std-env: 4.2.0
       tinyglobby: 0.2.17
+      ufo: 1.6.4
     transitivePeerDependencies:
       - magic-string
       - magicast
@@ -6125,7 +6142,7 @@ snapshots:
       pathe: 2.0.3
       pkg-types: 2.3.1
       rou3: 0.8.1
-      std-env: 4.1.0
+      std-env: 4.2.0
       ufo: 1.6.4
       unctx: 2.5.0
       unstorage: 1.17.5(db0@0.3.4(@libsql/client@0.17.3)(better-sqlite3@12.9.0))(ioredis@5.10.1)
@@ -6177,7 +6194,7 @@ snapshots:
       defu: 6.1.7
       pathe: 2.0.3
       pkg-types: 2.3.1
-      std-env: 4.1.0
+      std-env: 4.2.0
 
   '@nuxt/telemetry@2.8.0(@nuxt/kit@4.4.2(magicast@0.5.2))':
     dependencies:
@@ -6186,7 +6203,7 @@ snapshots:
       consola: 3.4.2
       ofetch: 2.0.0-alpha.3
       rc9: 3.0.1
-      std-env: 4.1.0
+      std-env: 4.2.0
 
   '@nuxt/vite-builder@4.4.2(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@types/node@25.6.0)(eslint@9.39.4(jiti@2.7.0))(lightningcss@1.32.0)(magicast@0.5.2)(nuxt@4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@libsql/client@0.17.3)(@parcel/watcher@2.5.6)(@types/node@25.6.0)(@vue/compiler-sfc@3.5.41)(better-sqlite3@12.9.0)(cac@6.7.14)(db0@0.3.4(@libsql/client@0.17.3)(better-sqlite3@12.9.0))(eslint@9.39.4(jiti@2.7.0))(ioredis@5.10.1)(lightningcss@1.32.0)(magicast@0.5.2)(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.60.2))(rollup@4.60.2)(srvx@0.11.15)(terser@5.46.2)(typescript@5.9.3)(vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0))(vue-tsc@3.2.7(typescript@5.9.3))(yaml@2.9.0))(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.60.2))(rollup@4.60.2)(terser@5.46.2)(typescript@5.9.3)(vue-tsc@3.2.7(typescript@5.9.3))(vue@3.5.41(typescript@5.9.3))(yaml@2.9.0)':
     dependencies:
@@ -6212,7 +6229,7 @@ snapshots:
       pkg-types: 2.3.1
       postcss: 8.5.26
       seroval: 1.5.2
-      std-env: 4.1.0
+      std-env: 4.2.0
       ufo: 1.6.4
       unenv: 2.0.0-rc.24
       vite: 7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0)
@@ -6257,7 +6274,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxtjs/mdc@0.22.2(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))':
+  '@nuxtjs/mdc@0.22.2(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)':
     dependencies:
       '@nuxt/kit': 4.5.2(magic-string@0.30.21)(magicast@0.5.2)(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))(unplugin@3.0.0)
       '@shikijs/core': 4.4.2
@@ -6595,7 +6612,7 @@ snapshots:
   '@parcel/watcher-wasm@2.5.6':
     dependencies:
       is-glob: 4.0.3
-      picomatch: 4.0.4
+      picomatch: 4.0.5
 
   '@parcel/watcher-win32-arm64@2.5.6':
     optional: true
@@ -6611,7 +6628,7 @@ snapshots:
       detect-libc: 2.1.2
       is-glob: 4.0.3
       node-addon-api: 7.1.1
-      picomatch: 4.0.4
+      picomatch: 4.0.5
     optionalDependencies:
       '@parcel/watcher-android-arm64': 2.5.6
       '@parcel/watcher-darwin-arm64': 2.5.6
@@ -6657,10 +6674,10 @@ snapshots:
       '@rollup/pluginutils': 5.3.0(rollup@4.60.2)
       commondir: 1.0.1
       estree-walker: 2.0.2
-      fdir: 6.5.0(picomatch@4.0.4)
+      fdir: 6.5.0(picomatch@4.0.5)
       is-reference: 1.2.1
       magic-string: 0.30.21
-      picomatch: 4.0.4
+      picomatch: 4.0.5
     optionalDependencies:
       rollup: 4.60.2
 
@@ -6707,7 +6724,7 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.8
       estree-walker: 2.0.2
-      picomatch: 4.0.4
+      picomatch: 4.0.5
     optionalDependencies:
       rollup: 4.60.2
 
@@ -6855,7 +6872,7 @@ snapshots:
       eslint-visitor-keys: 4.2.1
       espree: 10.4.0
       estraverse: 5.3.0
-      picomatch: 4.0.4
+      picomatch: 4.0.5
 
   '@swc/helpers@0.5.21':
     dependencies:
@@ -7149,7 +7166,7 @@ snapshots:
       glob: 13.0.6
       graceful-fs: 4.2.11
       node-gyp-build: 4.8.4
-      picomatch: 4.0.4
+      picomatch: 4.0.5
       resolve-from: 5.0.0
     transitivePeerDependencies:
       - encoding
@@ -7190,7 +7207,7 @@ snapshots:
     dependencies:
       '@vue/compiler-sfc': 3.5.41
       ast-kit: 2.2.0
-      local-pkg: 1.1.2
+      local-pkg: 1.2.1
       magic-string-ast: 1.0.3
       unplugin-utils: 0.3.1
     optionalDependencies:
@@ -7282,7 +7299,7 @@ snapshots:
       alien-signals: 3.1.2
       muggle-string: 0.4.1
       path-browserify: 1.0.1
-      picomatch: 4.0.4
+      picomatch: 4.0.5
 
   '@vue/reactivity@3.5.41':
     dependencies:
@@ -8214,9 +8231,9 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
-  fdir@6.5.0(picomatch@4.0.4):
+  fdir@6.5.0(picomatch@4.0.5):
     optionalDependencies:
-      picomatch: 4.0.4
+      picomatch: 4.0.5
 
   file-entry-cache@8.0.0:
     dependencies:
@@ -8543,6 +8560,8 @@ snapshots:
       parent-module: 1.0.1
       resolve-from: 4.0.0
 
+  import-meta-resolve@4.2.0: {}
+
   impound@1.1.5:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
@@ -8788,7 +8807,7 @@ snapshots:
       mlly: 1.8.2
       node-forge: 1.4.0
       pathe: 2.0.3
-      std-env: 4.1.0
+      std-env: 4.2.0
       tinyclip: 0.1.12
       ufo: 1.6.4
       untun: 0.1.3
@@ -8798,7 +8817,7 @@ snapshots:
 
   load-tsconfig@0.2.5: {}
 
-  local-pkg@1.1.2:
+  local-pkg@1.2.1:
     dependencies:
       mlly: 1.8.2
       pkg-types: 2.3.1
@@ -9308,7 +9327,7 @@ snapshots:
       serve-placeholder: 2.0.2
       serve-static: 2.2.1
       source-map: 0.7.6
-      std-env: 4.1.0
+      std-env: 4.2.0
       ufo: 1.6.4
       ultrahtml: 1.6.0
       uncrypto: 0.1.3
@@ -9444,12 +9463,12 @@ snapshots:
       oxc-walker: 0.7.0(oxc-parser@0.117.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0))
       pathe: 2.0.3
       perfect-debounce: 2.1.0
-      picomatch: 4.0.4
+      picomatch: 4.0.5
       pkg-types: 2.3.1
       rou3: 0.8.1
       scule: 1.3.0
       semver: 7.8.1
-      std-env: 4.1.0
+      std-env: 4.2.0
       tinyglobby: 0.2.17
       ufo: 1.6.4
       ultrahtml: 1.6.0
@@ -9792,7 +9811,7 @@ snapshots:
 
   picomatch@2.3.2: {}
 
-  picomatch@4.0.4: {}
+  picomatch@4.0.5: {}
 
   pkg-types@1.3.1:
     dependencies:
@@ -10253,7 +10272,7 @@ snapshots:
   rollup-plugin-visualizer@7.0.1(rollup@4.60.2):
     dependencies:
       open: 11.0.0
-      picomatch: 4.0.4
+      picomatch: 4.0.5
       source-map: 0.7.6
       yargs: 18.0.0
     optionalDependencies:
@@ -10447,9 +10466,7 @@ snapshots:
 
   statuses@2.0.2: {}
 
-  std-env@3.10.0: {}
-
-  std-env@4.1.0: {}
+  std-env@4.2.0: {}
 
   streamx@2.25.0:
     dependencies:
@@ -10610,8 +10627,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.5)
+      picomatch: 4.0.5
 
   to-regex-range@5.0.1:
     dependencies:
@@ -10714,11 +10731,11 @@ snapshots:
       acorn: 8.16.0
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
-      local-pkg: 1.1.2
+      local-pkg: 1.2.1
       magic-string: 0.30.21
       mlly: 1.8.2
       pathe: 2.0.3
-      picomatch: 4.0.4
+      picomatch: 4.0.5
       pkg-types: 2.3.1
       scule: 1.3.0
       strip-literal: 3.1.0
@@ -10731,11 +10748,11 @@ snapshots:
       acorn: 8.16.0
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
-      local-pkg: 1.1.2
+      local-pkg: 1.2.1
       magic-string: 0.30.21
       mlly: 1.8.2
       pathe: 2.0.3
-      picomatch: 4.0.4
+      picomatch: 4.0.5
       pkg-types: 2.3.1
       scule: 1.3.0
       strip-literal: 3.1.0
@@ -10780,19 +10797,19 @@ snapshots:
   unplugin-utils@0.3.1:
     dependencies:
       pathe: 2.0.3
-      picomatch: 4.0.4
+      picomatch: 4.0.5
 
   unplugin@2.3.11:
     dependencies:
       '@jridgewell/remapping': 2.3.5
       acorn: 8.16.0
-      picomatch: 4.0.4
+      picomatch: 4.0.5
       webpack-virtual-modules: 0.6.2
 
   unplugin@3.0.0:
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      picomatch: 4.0.4
+      picomatch: 4.0.5
       webpack-virtual-modules: 0.6.2
 
   unrouting@0.1.7:
@@ -10928,7 +10945,7 @@ snapshots:
       chokidar: 4.0.3
       npm-run-path: 6.0.0
       picocolors: 1.1.1
-      picomatch: 4.0.4
+      picomatch: 4.0.5
       tiny-invariant: 1.3.3
       tinyglobby: 0.2.17
       vite: 7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0)
@@ -10969,8 +10986,8 @@ snapshots:
   vite@7.3.2(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.46.2)(yaml@2.9.0):
     dependencies:
       esbuild: 0.27.7
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.5)
+      picomatch: 4.0.5
       postcss: 8.5.26
       rollup: 4.60.2
       tinyglobby: 0.2.17
@@ -11014,12 +11031,12 @@ snapshots:
       ast-walker-scope: 0.8.3
       chokidar: 5.0.0
       json5: 2.2.3
-      local-pkg: 1.1.2
+      local-pkg: 1.2.1
       magic-string: 0.30.21
       mlly: 1.8.2
       muggle-string: 0.4.1
       pathe: 2.0.3
-      picomatch: 4.0.4
+      picomatch: 4.0.5
       scule: 1.3.0
       tinyglobby: 0.2.17
       unplugin: 3.0.0
